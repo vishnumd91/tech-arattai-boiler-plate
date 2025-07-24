@@ -1,10 +1,14 @@
 import React from "react";
+import Dashboard from "../modules/dashboard/components/Dashboard";
+import Todos from "../modules/users/Users";
 
 const Home = () => {
   return (
     <div style={styles.container}>
       <h1 style={styles.title}>Welcome to the Home Page</h1>
       <p style={styles.description}>This is a clean and simple home page.</p>
+      <Dashboard />
+      <Todos />
     </div>
   );
 };

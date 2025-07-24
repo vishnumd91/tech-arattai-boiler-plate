@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-const Login = () => {
+const LoginForm = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
 
@@ -12,8 +12,7 @@ const Login = () => {
   };
 
   return (
-    <div style={styles.container}>
-      <h2 style={styles.title}>Login</h2>
+    <div>
       <form onSubmit={handleSubmit} style={styles.form}>
         <div style={styles.inputGroup}>
           <label style={styles.label}>Email:</label>
@@ -85,4 +84,4 @@ const styles = {
   },
 };
 
-export default Login;
+export default LoginForm;
